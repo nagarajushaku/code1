@@ -1,0 +1,221 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 7,
+    "passes": 7,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-06-27T03:02:42.861Z",
+    "end": "2023-06-27T03:03:11.364Z",
+    "duration": 28503,
+    "testsRegistered": 7,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "cdb24340-a1b4-4ff6-9188-d65a431f1652",
+      "title": "",
+      "fullFile": "cypress/integration/loginsuite/login.spec.js",
+      "file": "cypress/integration/loginsuite/login.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4267ebef-1669-4dfc-a36d-1873e48e7f89",
+          "title": "To verify the login functionality",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "To verify positive logIn test",
+              "fullTitle": "To verify the login functionality To verify positive logIn test",
+              "timedOut": null,
+              "duration": 9460,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(Cypress.env('baseUrl'));\n_login.loginpage.enterUsername(loginuserdata.positivelogintest);\n_login.loginpage.enterPassword(loginuserdata.positivelogintest);\n_login.loginpage.clicksOnSubmit();\n_login.loginpage.verifyTheNewPageURl();\n_login.loginpage.verifyTheNewPageContainsExpectedText();",
+              "err": {},
+              "uuid": "03df19ad-893f-4e34-a2c3-549ffc2395de",
+              "parentUUID": "4267ebef-1669-4dfc-a36d-1873e48e7f89",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "To verify negative username test",
+              "fullTitle": "To verify the login functionality To verify negative username test",
+              "timedOut": null,
+              "duration": 2982,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(Cypress.env('baseUrl'));\n_login.loginpage.enterUsername(loginuserdata.negativeusernametest);\n_login.loginpage.enterPassword(loginuserdata.negativeusernametest);\n_login.loginpage.clicksOnSubmit();\n_login.loginpage.verifyErrormsg();",
+              "err": {},
+              "uuid": "8b3f2e25-6197-4650-931e-bfaa774dd30f",
+              "parentUUID": "4267ebef-1669-4dfc-a36d-1873e48e7f89",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "To verify negative password  test",
+              "fullTitle": "To verify the login functionality To verify negative password  test",
+              "timedOut": null,
+              "duration": 1208,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_login.loginpage.enterUsername(loginuserdata.negativepasswordtest);\n_login.loginpage.enterPassword(loginuserdata.negativepasswordtest);\n_login.loginpage.clicksOnSubmit();\n_login.loginpage.verifyErrormsg();",
+              "err": {},
+              "uuid": "9e24fe9a-63e7-402b-a26c-1f653591d58d",
+              "parentUUID": "4267ebef-1669-4dfc-a36d-1873e48e7f89",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "To verify empty username and empty password  test",
+              "fullTitle": "To verify the login functionality To verify empty username and empty password  test",
+              "timedOut": null,
+              "duration": 779,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_login.loginpage.enterUsername(loginuserdata.emptyusernameandemptypassword);\n_login.loginpage.enterPassword(loginuserdata.emptyusernameandemptypassword);\n_login.loginpage.clicksOnSubmit();\n_login.loginpage.verifyErrormsg();",
+              "err": {},
+              "uuid": "6094c15f-b1c2-4060-84af-7955e69be595",
+              "parentUUID": "4267ebef-1669-4dfc-a36d-1873e48e7f89",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "To verify that the User is not able to Login with an invalid Username and invalid Password",
+              "fullTitle": "To verify the login functionality To verify that the User is not able to Login with an invalid Username and invalid Password",
+              "timedOut": null,
+              "duration": 1234,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_login.loginpage.enterUsername(loginuserdata.invalidusernameandinvalidpassword);\n_login.loginpage.enterPassword(loginuserdata.invalidusernameandinvalidpassword);\n_login.loginpage.clicksOnSubmit();\n_login.loginpage.verifyErrormsg();",
+              "err": {},
+              "uuid": "8e59c988-897c-402f-8eb2-9ec35d8b5f49",
+              "parentUUID": "4267ebef-1669-4dfc-a36d-1873e48e7f89",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "To verify the login page for both, when the field is blank and Submit button is clicked",
+              "fullTitle": "To verify the login functionality To verify the login page for both, when the field is blank and Submit button is clicked",
+              "timedOut": null,
+              "duration": 285,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_login.loginpage.clicksOnSubmit();\n_login.loginpage.verifyErrormsg();",
+              "err": {},
+              "uuid": "3a8494a8-2a62-45de-8cf7-4a5a6379d4da",
+              "parentUUID": "4267ebef-1669-4dfc-a36d-1873e48e7f89",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "To verify that the logout link is redirected to login/home page",
+              "fullTitle": "To verify the login functionality To verify that the logout link is redirected to login/home page",
+              "timedOut": null,
+              "duration": 6994,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(Cypress.env('baseUrl'));\n_login.loginpage.enterUsername(loginuserdata.positivelogintest);\n_login.loginpage.enterPassword(loginuserdata.positivelogintest);\n_login.loginpage.clicksOnSubmit();\n_login.loginpage.verifyTheNewPageURl();\n_login.loginpage.verifyTheNewPageContainsExpectedText();\n_login.loginpage.clicksOnLogOutButton();",
+              "err": {},
+              "uuid": "1606492c-dff1-4dc0-b82c-efeabcde6fad",
+              "parentUUID": "4267ebef-1669-4dfc-a36d-1873e48e7f89",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "03df19ad-893f-4e34-a2c3-549ffc2395de",
+            "8b3f2e25-6197-4650-931e-bfaa774dd30f",
+            "9e24fe9a-63e7-402b-a26c-1f653591d58d",
+            "6094c15f-b1c2-4060-84af-7955e69be595",
+            "8e59c988-897c-402f-8eb2-9ec35d8b5f49",
+            "3a8494a8-2a62-45de-8cf7-4a5a6379d4da",
+            "1606492c-dff1-4dc0-b82c-efeabcde6fad"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 22942,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
