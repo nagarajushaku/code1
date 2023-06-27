@@ -1,0 +1,23 @@
+{
+  "positivelogintest":{
+  "username": "student",
+  "password": "Password123"
+},
+"negativeusernametest":{
+  "username": "incorrectUser",
+  "password": "Password123"
+},
+"negativepasswordtest":{
+  "username": "student",
+  "password": "incorrectPassword"
+},
+"emptyusernameandemptypassword":{
+  "username": " ",
+  "password": " "
+},
+"invalidusernameandinvalidpassword":{
+  "username": "student",
+  "password": "incorrectPassword"
+}
+
+}
